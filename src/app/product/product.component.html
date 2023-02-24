@@ -1,5 +1,11 @@
 
 <h1 class="title">{{titlee}}</h1>
+<div>
+  <button class="btn btn-primary" (click)="count()">count</button>
+</div>
+<div>
+  {{s}}
+</div>
 <input type="number" name="price" [(ngModel)]="price_max" >
 <div class="row">
   <div class="col-md-4" *ngFor="let p of listProduct,let i=index">
